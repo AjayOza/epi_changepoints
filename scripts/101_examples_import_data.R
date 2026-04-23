@@ -46,6 +46,8 @@ df_infected_all_seasons <- df_infected_all_seasons %>%
 z_blanks <- is.na(df_infected_all_seasons$reports_raw)
 n_blanks <- sum(z_blanks)
 
+set.seed(123)
+
 if (n_blanks > 0) {
   df_infected_all_seasons$reports[z_blanks] <- rpois(n = n_blanks, lambda = lambda_impute)
   message(sprintf("Imputed %d missing reports_raw value(s) using Poisson(lambda = %.2f).", n_blanks, lambda_impute))

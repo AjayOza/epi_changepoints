@@ -1,12 +1,14 @@
 # epi_changepoints
 
-Repository for data and code for the article: "Detecting changepoints in dynamical systems: Modelling time-varying transmission of seasonal influenza", Oza, AN, O'Brien, KM, Gleeson, JP; PNAS, 2026
+Repository for data and code for the article: "Detecting changepoints in dynamical systems: Modelling time-varying transmission of seasonal influenza", A. N. Oza, K. M. O'Brien, J. P. Gleeson. *PNAS*, (2026)
 
 Currently this repository shows how to intialise the data in an R project. Data courtesy of HSE-Health Protection Surveillance Centre. See note on the data below.
 
 ### How to run
 
-After downloading/cloning, go to the script 101_examples_import_data.R and source. object `df_infected_all_seasons` should have the data as used in the article.
+After downloading/cloning, go to the script "101_main.R" and run section 1. The object `df_infected_all_seasons` should have the data as used in the article. Running section 2 will show a chart similar to the **figure 2** in the article.
+
+Further sections explore methods used in the article. However, only very basic example is given; more methods to follow.
 
 Regarding Git or R projects, you may find the following resources helpful:
 
